@@ -49,10 +49,10 @@ const translations = {
       primaryAction: "在 Mac App Store 下载",
       secondaryAction: "查看产品截图",
       factsAria: "产品信息",
-      fact1Label: "试用",
-      fact1Value: "免费 7 天",
+      fact1Label: "免费使用",
+      fact1Value: "包含 200 次",
       fact2Label: "解锁",
-      fact2Value: "US$2.99 永久解锁",
+      fact2Value: "7 天试用后 US$1",
       fact3Label: "隐私",
       fact3Value: "文件留在本机"
     },
@@ -140,19 +140,19 @@ const translations = {
     },
     pricing: {
       eyebrow: "简单定价",
-      title: "7 天免费试用，US$2.99 一次购买永久解锁。",
-      text: "先免费试用 7 天，之后一次性付费即可永久解锁全部功能。",
-      label: "完整解锁",
-      price: "US$2.99",
-      panelText: "7 天免费试用后，US$2.99 一次性购买永久解锁全部功能。",
+      title: "不购买也可免费使用 200 次，之后 7 天试用，US$1 永久解锁。",
+      text: "FindText PRO 在不需要购买任何商品的情况下提供 200 次免费使用；之后可开启 7 天免费试用，最后 US$1 一次购买永久使用权。",
+      label: "永久解锁",
+      price: "US$1",
+      panelText: "无需购买即可免费使用 200 次，之后可进行 7 天免费试用，再以 US$1 一次购买永久完整访问权。",
       bullets: [
-        "为笔记、文档、日志和代码提供本地多文件夹搜索",
-        "为不熟悉正则的用户提供问答模式",
-        "普通搜索使用纯文本，高级搜索使用正则和预设",
-        "可选择的替换预览和会话撤销",
-        "历史快照、复制操作和报告导出"
+        "不需要购买任何商品即可免费使用 200 次",
+        "免费使用额度结束后可进行 7 天免费试用",
+        "US$1 一次购买即可获得永久使用权",
+        "无订阅，也不会自动扣费",
+        "搜索、替换、历史记录和导出功能全部包含"
       ],
-      button: "开始 7 天免费试用"
+      button: "下载并免费开始"
     },
     faq: {
       eyebrow: "常见问题",
@@ -193,10 +193,10 @@ const translations = {
       primaryAction: "在 Mac App Store 下載",
       secondaryAction: "查看產品截圖",
       factsAria: "產品資訊",
-      fact1Label: "試用",
-      fact1Value: "免費 7 天",
+      fact1Label: "免費使用",
+      fact1Value: "包含 200 次",
       fact2Label: "解鎖",
-      fact2Value: "US$2.99 永久解鎖",
+      fact2Value: "7 天試用後 US$1",
       fact3Label: "隱私",
       fact3Value: "檔案留在本機"
     },
@@ -284,19 +284,19 @@ const translations = {
     },
     pricing: {
       eyebrow: "簡單定價",
-      title: "7 天免費試用，US$2.99 一次購買永久解鎖。",
-      text: "先免費試用 7 天，之後一次性付費即可永久解鎖全部功能。",
-      label: "完整解鎖",
-      price: "US$2.99",
-      panelText: "7 天免費試用後，US$2.99 一次性購買永久解鎖全部功能。",
+      title: "不購買也可免費使用 200 次，之後 7 天試用，US$1 永久解鎖。",
+      text: "FindText PRO 在不需要購買任何商品的情況下提供 200 次免費使用；之後可開啟 7 天免費試用，最後 US$1 一次購買永久使用權。",
+      label: "永久解鎖",
+      price: "US$1",
+      panelText: "無需購買即可免費使用 200 次，之後可進行 7 天免費試用，再以 US$1 一次購買永久完整存取權。",
       bullets: [
-        "為筆記、文件、日誌與程式碼提供本機多資料夾搜尋",
-        "為不熟悉正則的使用者提供問答模式",
-        "普通搜尋使用純文字，進階搜尋使用正則與預設",
-        "可選擇的取代預覽與工作階段復原",
-        "歷史快照、複製操作與報告匯出"
+        "不需要購買任何商品即可免費使用 200 次",
+        "免費使用額度結束後可進行 7 天免費試用",
+        "US$1 一次購買即可獲得永久使用權",
+        "無訂閱，也不會自動扣費",
+        "搜尋、取代、歷史記錄和匯出功能全部包含"
       ],
-      button: "開始 7 天免費試用"
+      button: "下載並免費開始"
     },
     faq: {
       eyebrow: "常見問題",
@@ -337,10 +337,10 @@ const translations = {
       primaryAction: "Download on the Mac App Store",
       secondaryAction: "View product shots",
       factsAria: "Product facts",
-      fact1Label: "Trial",
-      fact1Value: "7 days free",
+      fact1Label: "Free use",
+      fact1Value: "200 uses included",
       fact2Label: "Unlock",
-      fact2Value: "US$2.99 forever",
+      fact2Value: "7-day trial, then US$1",
       fact3Label: "Privacy",
       fact3Value: "Files stay local"
     },
@@ -428,19 +428,19 @@ const translations = {
     },
     pricing: {
       eyebrow: "Simple pricing",
-      title: "Try it free for 7 days. Unlock forever for US$2.99.",
-      text: "Start with a 7-day free trial, then pay once to unlock every feature forever.",
-      label: "Full unlock",
-      price: "US$2.99",
-      panelText: "7-day free trial, then a US$2.99 one-time purchase for permanent full access.",
+      title: "Use it 200 times free. Then try 7 days and unlock forever for US$1.",
+      text: "Use FindText PRO 200 times without purchasing anything. After that, start a 7-day free trial, then pay once for permanent access.",
+      label: "Permanent unlock",
+      price: "US$1",
+      panelText: "200 free uses without purchasing anything, then a 7-day free trial, then a US$1 one-time purchase for permanent full access.",
       bullets: [
-        "Local multi-folder search for notes, documents, logs, and code",
-        "Question Mode for users who do not know regex",
-        "Plain text for normal searches, regex and presets for advanced ones",
-        "Selectable replacement previews and session undo",
-        "History snapshots, copy actions, and report export"
+        "200 free uses with no purchase required",
+        "7-day free trial available after the free-use allowance",
+        "US$1 one-time purchase for permanent full access",
+        "No subscription and no automatic billing",
+        "All search, replacement, history, and export features included"
       ],
-      button: "Start your 7-day free trial"
+      button: "Download and start free"
     },
     faq: {
       eyebrow: "FAQ",
@@ -481,10 +481,10 @@ const translations = {
       primaryAction: "Im Mac App Store laden",
       secondaryAction: "Produktbilder ansehen",
       factsAria: "Produktdaten",
-      fact1Label: "Testphase",
-      fact1Value: "7 Tage kostenlos",
+      fact1Label: "Kostenlose Nutzung",
+      fact1Value: "200 Nutzungen enthalten",
       fact2Label: "Freischaltung",
-      fact2Value: "US$2.99 dauerhaft",
+      fact2Value: "7 Tage testen, dann US$1",
       fact3Label: "Datenschutz",
       fact3Value: "Dateien bleiben lokal"
     },
@@ -572,19 +572,19 @@ const translations = {
     },
     pricing: {
       eyebrow: "Einfache Preise",
-      title: "7 Tage kostenlos testen. Für US$2.99 dauerhaft freischalten.",
-      text: "Starte mit einer 7-tägigen kostenlosen Testphase und zahle danach einmal, um alle Funktionen dauerhaft freizuschalten.",
-      label: "Voll freischalten",
-      price: "US$2.99",
-      panelText: "Nach 7 Tagen kostenloser Testphase schaltest du alle Funktionen mit einem einmaligen Kauf von US$2.99 dauerhaft frei.",
+      title: "200 Mal kostenlos nutzen. Danach 7 Tage testen und für US$1 dauerhaft freischalten.",
+      text: "Nutze FindText PRO 200 Mal, ohne etwas zu kaufen. Danach kannst du eine 7-tägige kostenlose Testphase starten und anschließend einmalig für dauerhaften Zugriff zahlen.",
+      label: "Dauerhafte Freischaltung",
+      price: "US$1",
+      panelText: "200 kostenlose Nutzungen ohne Kauf, danach 7 Tage kostenlose Testphase und anschließend ein einmaliger Kauf von US$1 für dauerhaften Vollzugriff.",
       bullets: [
-        "Lokale Mehrordnersuche für Notizen, Dokumente, Logs und Code",
-        "Fragemodus für Nutzer ohne Regex-Kenntnisse",
-        "Klartext für normale Suchen, Regex und Voreinstellungen für erweiterte",
-        "Auswählbare Ersetzungsvorschauen und Sitzungs-Undo",
-        "Verlaufsschnappschüsse, Kopieraktionen und Berichtsexport"
+        "200 kostenlose Nutzungen ohne Kauf erforderlich",
+        "7-tägige kostenlose Testphase nach dem kostenlosen Kontingent",
+        "Einmaliger Kauf von US$1 für dauerhaften Vollzugriff",
+        "Kein Abo und keine automatische Abbuchung",
+        "Alle Such-, Ersetzungs-, Verlaufs- und Exportfunktionen enthalten"
       ],
-      button: "7 Tage kostenlos testen"
+      button: "Herunterladen und kostenlos starten"
     },
     faq: {
       eyebrow: "FAQ",
@@ -625,10 +625,10 @@ const translations = {
       primaryAction: "Descargar en Mac App Store",
       secondaryAction: "Ver capturas del producto",
       factsAria: "Datos del producto",
-      fact1Label: "Prueba",
-      fact1Value: "7 días gratis",
+      fact1Label: "Uso gratis",
+      fact1Value: "200 usos incluidos",
       fact2Label: "Desbloqueo",
-      fact2Value: "US$2.99 para siempre",
+      fact2Value: "7 días de prueba, luego US$1",
       fact3Label: "Privacidad",
       fact3Value: "Archivos locales"
     },
@@ -716,19 +716,19 @@ const translations = {
     },
     pricing: {
       eyebrow: "Precio simple",
-      title: "Pruébalo gratis 7 días. Desbloqueo permanente por US$2.99.",
-      text: "Empieza con una prueba gratuita de 7 días y después paga una sola vez para desbloquear todas las funciones para siempre.",
-      label: "Desbloqueo completo",
-      price: "US$2.99",
-      panelText: "Prueba gratuita de 7 días y después compra única de US$2.99 para acceso completo permanente.",
+      title: "Úsalo 200 veces gratis. Luego prueba 7 días y desbloquea para siempre por US$1.",
+      text: "Usa FindText PRO 200 veces sin comprar nada. Después, inicia una prueba gratuita de 7 días y paga una sola vez para acceso permanente.",
+      label: "Desbloqueo permanente",
+      price: "US$1",
+      panelText: "200 usos gratuitos sin comprar nada, luego una prueba gratuita de 7 días y después una compra única de US$1 para acceso completo permanente.",
       bullets: [
-        "Búsqueda local en varias carpetas para notas, documentos, registros y código",
-        "Modo Pregunta para usuarios que no conocen regex",
-        "Texto simple para búsquedas normales, regex y presets para avanzadas",
-        "Vistas previas de reemplazo seleccionables y deshacer de sesión",
-        "Instantáneas de historial, acciones de copia y exportación de informes"
+        "200 usos gratuitos sin compra requerida",
+        "Prueba gratuita de 7 días después del cupo gratis",
+        "Compra única de US$1 para acceso completo permanente",
+        "Sin suscripción y sin cobro automático",
+        "Incluye búsqueda, reemplazo, historial y exportación"
       ],
-      button: "Iniciar prueba gratuita de 7 días"
+      button: "Descargar y empezar gratis"
     },
     faq: {
       eyebrow: "FAQ",
@@ -769,10 +769,10 @@ const translations = {
       primaryAction: "Télécharger sur le Mac App Store",
       secondaryAction: "Voir les captures produit",
       factsAria: "Informations produit",
-      fact1Label: "Essai",
-      fact1Value: "7 jours gratuits",
+      fact1Label: "Usage gratuit",
+      fact1Value: "200 utilisations incluses",
       fact2Label: "Déblocage",
-      fact2Value: "US$2.99 à vie",
+      fact2Value: "7 jours d'essai, puis US$1",
       fact3Label: "Confidentialité",
       fact3Value: "Fichiers locaux"
     },
@@ -860,19 +860,19 @@ const translations = {
     },
     pricing: {
       eyebrow: "Prix simple",
-      title: "Essayez 7 jours gratuitement. Déblocage à vie pour US$2.99.",
-      text: "Commencez par un essai gratuit de 7 jours, puis payez une seule fois pour débloquer toutes les fonctions à vie.",
-      label: "Déblocage complet",
-      price: "US$2.99",
-      panelText: "Essai gratuit de 7 jours, puis achat unique de US$2.99 pour un accès complet permanent.",
+      title: "Utilisez-le 200 fois gratuitement. Puis 7 jours d'essai et déblocage à vie pour US$1.",
+      text: "Utilisez FindText PRO 200 fois sans rien acheter. Ensuite, démarrez un essai gratuit de 7 jours, puis payez une seule fois pour un accès permanent.",
+      label: "Déblocage permanent",
+      price: "US$1",
+      panelText: "200 utilisations gratuites sans achat, puis essai gratuit de 7 jours, puis achat unique de US$1 pour un accès complet permanent.",
       bullets: [
-        "Recherche locale multi-dossiers pour notes, documents, journaux et code",
-        "Mode Questions pour les personnes qui ne connaissent pas les regex",
-        "Texte simple pour recherches normales, regex et préréglages pour les avancées",
-        "Aperçus de remplacement sélectionnables et annulation de session",
-        "Instantanés d’historique, actions de copie et export de rapports"
+        "200 utilisations gratuites sans achat requis",
+        "Essai gratuit de 7 jours après le quota gratuit",
+        "Achat unique de US$1 pour un accès complet permanent",
+        "Aucun abonnement ni facturation automatique",
+        "Recherche, remplacement, historique et export inclus"
       ],
-      button: "Commencer l’essai gratuit de 7 jours"
+      button: "Télécharger et commencer gratuitement"
     },
     faq: {
       eyebrow: "FAQ",
@@ -913,10 +913,10 @@ const translations = {
       primaryAction: "Scarica dal Mac App Store",
       secondaryAction: "Vedi schermate del prodotto",
       factsAria: "Dati del prodotto",
-      fact1Label: "Prova",
-      fact1Value: "7 giorni gratis",
+      fact1Label: "Uso gratuito",
+      fact1Value: "200 utilizzi inclusi",
       fact2Label: "Sblocco",
-      fact2Value: "US$2.99 per sempre",
+      fact2Value: "7 giorni di prova, poi US$1",
       fact3Label: "Privacy",
       fact3Value: "File sempre locali"
     },
@@ -1004,19 +1004,19 @@ const translations = {
     },
     pricing: {
       eyebrow: "Prezzo semplice",
-      title: "Provalo gratis per 7 giorni. Sblocco permanente a US$2.99.",
-      text: "Inizia con una prova gratuita di 7 giorni, poi paga una sola volta per sbloccare tutte le funzioni per sempre.",
-      label: "Sblocco completo",
-      price: "US$2.99",
-      panelText: "Prova gratuita di 7 giorni, poi acquisto una tantum da US$2.99 per accesso completo permanente.",
+      title: "Usalo 200 volte gratis. Poi prova 7 giorni e sblocca per sempre a US$1.",
+      text: "Usa FindText PRO 200 volte senza acquistare nulla. Poi avvia una prova gratuita di 7 giorni e paga una sola volta per l'accesso permanente.",
+      label: "Sblocco permanente",
+      price: "US$1",
+      panelText: "200 utilizzi gratuiti senza acquistare nulla, poi prova gratuita di 7 giorni e acquisto una tantum da US$1 per accesso completo permanente.",
       bullets: [
-        "Ricerca locale multi-cartella per note, documenti, log e codice",
-        "Modalità Domande per utenti che non conoscono regex",
-        "Testo semplice per ricerche normali, regex e preset per quelle avanzate",
-        "Anteprime di sostituzione selezionabili e annullamento di sessione",
-        "Snapshot cronologia, azioni di copia ed esportazione report"
+        "200 utilizzi gratuiti senza acquisto richiesto",
+        "Prova gratuita di 7 giorni dopo il limite gratuito",
+        "Acquisto una tantum da US$1 per accesso completo permanente",
+        "Nessun abbonamento e nessun addebito automatico",
+        "Ricerca, sostituzione, cronologia ed esportazione incluse"
       ],
-      button: "Inizia la prova gratuita di 7 giorni"
+      button: "Scarica e inizia gratis"
     },
     faq: {
       eyebrow: "FAQ",
@@ -1057,10 +1057,10 @@ const translations = {
       primaryAction: "Mac App Store でダウンロード",
       secondaryAction: "製品画面を見る",
       factsAria: "製品情報",
-      fact1Label: "試用",
-      fact1Value: "7 日間無料",
+      fact1Label: "無料利用",
+      fact1Value: "200 回分を含む",
       fact2Label: "解除",
-      fact2Value: "US$2.99 で永久解除",
+      fact2Value: "7 日間試用後 US$1",
       fact3Label: "プライバシー",
       fact3Value: "ファイルはローカル"
     },
@@ -1148,19 +1148,19 @@ const translations = {
     },
     pricing: {
       eyebrow: "シンプルな価格",
-      title: "7 日間無料で試して、US$2.99 で永久解除。",
-      text: "まず 7 日間無料で試し、その後一回購入で全機能を永久に解除できます。",
-      label: "フル解除",
-      price: "US$2.99",
-      panelText: "7 日間無料試用後、US$2.99 の一回購入で全機能を永久に利用できます。",
+      title: "購入なしで 200 回無料利用。その後 7 日間試用し、US$1 で永久解除。",
+      text: "FindText PRO は何も購入しなくても 200 回無料で利用できます。その後 7 日間の無料試用を開始し、最後に一回購入で永久アクセスできます。",
+      label: "永久解除",
+      price: "US$1",
+      panelText: "購入なしで 200 回無料利用、その後 7 日間無料試用、さらに US$1 の一回購入で永久フルアクセスできます。",
       bullets: [
-        "ノート、ドキュメント、ログ、コードのローカル複数フォルダ検索",
-        "正規表現を知らないユーザーのための質問モード",
-        "通常検索はプレーンテキスト、高度な検索は正規表現とプリセット",
-        "選択可能な置換プレビューとセッション取り消し",
-        "履歴スナップショット、コピー操作、レポート書き出し"
+        "購入不要で 200 回無料利用",
+        "無料利用枠の後に 7 日間無料試用",
+        "US$1 の一回購入で永久フルアクセス",
+        "サブスクリプションなし、自動課金なし",
+        "検索、置換、履歴、書き出し機能をすべて含む"
       ],
-      button: "7 日間無料試用を開始"
+      button: "ダウンロードして無料で開始"
     },
     faq: {
       eyebrow: "FAQ",
@@ -1201,10 +1201,10 @@ const translations = {
       primaryAction: "Скачать в Mac App Store",
       secondaryAction: "Посмотреть скриншоты",
       factsAria: "Сведения о продукте",
-      fact1Label: "Пробный период",
-      fact1Value: "7 дней бесплатно",
+      fact1Label: "Бесплатно",
+      fact1Value: "200 использований включено",
       fact2Label: "Разблокировка",
-      fact2Value: "US$2.99 навсегда",
+      fact2Value: "7 дней, затем US$1",
       fact3Label: "Приватность",
       fact3Value: "Файлы остаются локально"
     },
@@ -1292,19 +1292,19 @@ const translations = {
     },
     pricing: {
       eyebrow: "Простая цена",
-      title: "7 дней бесплатно. Постоянная разблокировка за US$2.99.",
-      text: "Начните с 7-дневного бесплатного периода, затем заплатите один раз, чтобы навсегда разблокировать все функции.",
-      label: "Полная разблокировка",
-      price: "US$2.99",
-      panelText: "7 дней бесплатно, затем разовая покупка за US$2.99 для постоянного полного доступа.",
+      title: "200 использований бесплатно. Затем 7 дней пробного периода и постоянная разблокировка за US$1.",
+      text: "Используйте FindText PRO 200 раз без покупки. Затем начните 7-дневный бесплатный пробный период и заплатите один раз за постоянный доступ.",
+      label: "Постоянная разблокировка",
+      price: "US$1",
+      panelText: "200 бесплатных использований без покупки, затем 7-дневный пробный период и разовая покупка за US$1 для постоянного полного доступа.",
       bullets: [
-        "Локальный поиск по нескольким папкам для заметок, документов, логов и кода",
-        "Режим вопросов для пользователей, которые не знают regex",
-        "Обычный текст для обычного поиска, regex и пресеты для продвинутого",
-        "Выбираемые предпросмотры замены и отмена в рамках сессии",
-        "Снимки истории, действия копирования и экспорт отчетов"
+        "200 бесплатных использований без необходимости покупки",
+        "7-дневный бесплатный пробный период после бесплатного лимита",
+        "Разовая покупка за US$1 для постоянного полного доступа",
+        "Без подписки и автоматических списаний",
+        "Поиск, замена, история и экспорт включены"
       ],
-      button: "Начать 7-дневный бесплатный период"
+      button: "Скачать и начать бесплатно"
     },
     faq: {
       eyebrow: "FAQ",
