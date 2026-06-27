@@ -6,6 +6,8 @@ The page uses real screenshots captured from a synthetic English demo workspace 
 
 ## Cloudflare Pages
 
+Production URL: <https://grepfileswebpage.pages.dev/>
+
 Connect the repository `fan1056218492/GrepFilesWebPage` to Cloudflare Pages and use:
 
 - Framework preset: None
@@ -15,3 +17,11 @@ Connect the repository `fan1056218492/GrepFilesWebPage` to Cloudflare Pages and 
 - Root directory: `/`
 
 The build copies the static site files into `dist/`. `wrangler.toml` also declares `pages_build_output_dir = "./dist"` so Wrangler and Cloudflare Pages use the same output folder.
+
+Deploy with:
+
+```sh
+npm run deploy
+```
+
+Wrangler may print a deployment-specific preview URL such as `https://<hash>.grepfileswebpage.pages.dev`. That URL changes on every deployment. Use the fixed production URL above for sharing and product links.
