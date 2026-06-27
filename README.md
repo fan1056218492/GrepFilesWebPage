@@ -18,6 +18,12 @@ Connect the repository `fan1056218492/GrepFilesWebPage` to Cloudflare Pages and 
 
 The build copies the static site files into `dist/`. `wrangler.toml` also declares `pages_build_output_dir = "./dist"` so Wrangler and Cloudflare Pages use the same output folder.
 
+Validate multilingual coverage with:
+
+```sh
+npm run check:i18n
+```
+
 Deploy with:
 
 ```sh

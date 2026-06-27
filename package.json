@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "rm -rf dist && mkdir -p dist && cp -R index.html styles.css script.js assets dist/",
+    "check:i18n": "node scripts/check-i18n.mjs",
     "deploy": "npm run build && npx wrangler pages deploy dist --project-name grepfileswebpage --branch main --commit-dirty=false"
   }
 }

@@ -1,7 +1,19 @@
 const APP_STORE_URL = "macappstore://apps.apple.com/cn/app/findtext-pro/id6765620148?mt=12";
+const SITE_URL = "https://grepfileswebpage.pages.dev/";
 const STORAGE_KEY = "findtext.locale";
 const DEFAULT_LOCALE = "en";
-const SUPPORTED_LOCALES = ["zh-Hans", "zh-Hant", "en", "de", "es", "fr", "it", "ja", "ru"];
+const LOCALE_CONFIG = {
+  "zh-Hans": { htmlLang: "zh-Hans", hreflang: "zh-Hans", ogLocale: "zh_CN", dir: "ltr" },
+  "zh-Hant": { htmlLang: "zh-Hant", hreflang: "zh-Hant", ogLocale: "zh_TW", dir: "ltr" },
+  en: { htmlLang: "en", hreflang: "en", ogLocale: "en_US", dir: "ltr" },
+  de: { htmlLang: "de", hreflang: "de", ogLocale: "de_DE", dir: "ltr" },
+  es: { htmlLang: "es", hreflang: "es", ogLocale: "es_ES", dir: "ltr" },
+  fr: { htmlLang: "fr", hreflang: "fr", ogLocale: "fr_FR", dir: "ltr" },
+  it: { htmlLang: "it", hreflang: "it", ogLocale: "it_IT", dir: "ltr" },
+  ja: { htmlLang: "ja", hreflang: "ja", ogLocale: "ja_JP", dir: "ltr" },
+  ru: { htmlLang: "ru", hreflang: "ru", ogLocale: "ru_RU", dir: "ltr" }
+};
+const SUPPORTED_LOCALES = Object.keys(LOCALE_CONFIG);
 const GALLERY_SHOTS = ["plain", "regex", "export", "replace", "history"];
 const GUIDED_SHOTS = ["goal", "traits", "boundaries", "structures", "options", "report"];
 
@@ -1337,10 +1349,25 @@ function text(path, locale = currentLocale) {
   return typeof fallback === "string" ? fallback : "";
 }
 
+function getLocaleConfig(locale) {
+  return LOCALE_CONFIG[locale] || LOCALE_CONFIG[DEFAULT_LOCALE];
+}
+
+function localizedUrl(locale) {
+  const url = new URL(SITE_URL);
+  url.searchParams.set("lang", locale);
+  return url.href;
+}
+
+function setMetaContent(selector, content) {
+  const element = document.querySelector(selector);
+  if (element) element.content = content;
+}
+
 function normalizeLocaleTag(tag) {
   if (!tag) return null;
 
-  const normalized = String(tag).trim().replace("_", "-");
+  const normalized = String(tag).trim().replaceAll("_", "-");
   const lower = normalized.toLowerCase();
   if (!lower) return null;
 
@@ -1400,16 +1427,49 @@ function updateUrlLocale(locale) {
 
 function updateMeta(locale) {
   const meta = translations[locale].meta || translations[DEFAULT_LOCALE].meta;
+  const config = getLocaleConfig(locale);
+  const url = localizedUrl(locale);
   document.title = meta.title;
-  document.documentElement.lang = locale;
+  document.documentElement.lang = config.htmlLang;
+  document.documentElement.dir = config.dir;
 
   const description = document.querySelector('meta[name="description"]');
+  const canonical = document.querySelector('link[rel="canonical"]');
   const ogTitle = document.querySelector('meta[property="og:title"]');
   const ogDescription = document.querySelector('meta[property="og:description"]');
 
   if (description) description.content = meta.description;
+  if (canonical) canonical.href = url;
   if (ogTitle) ogTitle.content = meta.ogTitle;
   if (ogDescription) ogDescription.content = meta.ogDescription;
+
+  setMetaContent('meta[property="og:url"]', url);
+  setMetaContent('meta[property="og:locale"]', config.ogLocale);
+  setMetaContent('meta[name="twitter:title"]', meta.ogTitle);
+  setMetaContent('meta[name="twitter:description"]', meta.ogDescription);
+
+  document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => {
+    const hreflang = link.getAttribute("hreflang") || "";
+
+    if (hreflang.toLowerCase() === "x-default") {
+      link.href = localizedUrl(DEFAULT_LOCALE);
+      return;
+    }
+
+    const alternateLocale = SUPPORTED_LOCALES.find((candidate) => getLocaleConfig(candidate).hreflang.toLowerCase() === hreflang.toLowerCase());
+    if (alternateLocale) link.href = localizedUrl(alternateLocale);
+  });
+
+  document.querySelectorAll('meta[property="og:locale:alternate"]').forEach((element) => {
+    element.remove();
+  });
+
+  SUPPORTED_LOCALES.filter((candidate) => candidate !== locale).forEach((candidate) => {
+    const alternate = document.createElement("meta");
+    alternate.setAttribute("property", "og:locale:alternate");
+    alternate.content = getLocaleConfig(candidate).ogLocale;
+    document.head.appendChild(alternate);
+  });
 }
 
 function applyStaticTranslations(locale) {
